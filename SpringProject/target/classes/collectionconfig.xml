@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+  http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="emp" class="com.springcore.collections.Emp">
+		<property name="name" value="Argha" />
+		<property name="phones">
+			<list>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+			</list>
+
+		</property>
+		<property name="addresses">
+			<set>
+				<value>kolkata</value>
+				<value>delhi</value>
+				<value>mumbai</value>
+				<value>kerala</value>
+			</set>
+		</property>
+		<property name="courses">
+			<map>
+				<entry key="Spring" value="100" />
+				<entry key="Java" value="200" />
+				<entry key="C++" value="300" />
+			</map>
+		</property>
+	</bean>
+
+</beans>
